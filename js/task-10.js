@@ -58,10 +58,10 @@ function createBoxes(amount) {
   const markup = new Array(amount)
 
   for (let i = 0; i < markup.length; i++){
-    markup[i] = `div style="background-color:
+    markup[i] = `<div style = "background-color:
     ${getRandomHexColor()};
     width: ${ 30 + i * 10 }px;
-    height: ${ 30 + i * 10}px;"</div>`;
+    height: ${ 30 + i * 10}px;"></div>`;
   }
   boxes.innerHTML = markup.join('');
 }
