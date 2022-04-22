@@ -7,18 +7,18 @@ const counterValue = {
        this.value -= 1; 
     }
 };
-const IncrementButton = document.querySelector('[data-action="increment"]');
-const DecrementButton = document.querySelector('[data-action="decrement"]');
-const ValueEl = document.querySelector('#value');
+const incrementButton = document.querySelector('[data-action="increment"]');
+const decrementButton = document.querySelector('[data-action="decrement"]');
+const valueEl = document.querySelector('#value');
 
-IncrementButton.addEventListener("click", function () {
+incrementButton.addEventListener("click", function () {
     counterValue.increment();
-    ValueEl.textContent = counterValue.value;
+    valueEl.textContent = counterValue.value;
     console.log(counterValue);
 });
 
-DecrementButton.addEventListener("click", function () {
+decrementButton.addEventListener("click", function () {
     counterValue.decrement();
-    ValueEl.textContent = counterValue.value;
+    valueEl.textContent = counterValue.value;
     console.log(counterValue);
 });

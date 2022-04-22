@@ -1,3 +1,4 @@
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -6,15 +7,20 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const MainList = document.createElement("ul");
 
- ingredients.forEach((ingredient) => {
- const ingredientsList = document.createElement("li");
- ingredientsList.textContent = ingredient;
- const ProductList = ingredientsList.classList.add('item');
-  MainList.append(ingredientsList);
+
+const ingredientsList = document.querySelector("#ingredients");
+
+const ingredientItemsList = ingredients.map(ingredient => {
   
+  const ingredientItem = document.createElement('li');
+
+  ingredientItem.textContent = ingredient;
+  ingredientItem.classList.add("item");
+
+  return ingredientItem;
+
 });
 
-console.log(MainList)
 
+ingredientsList.append(...ingredientItemsList);

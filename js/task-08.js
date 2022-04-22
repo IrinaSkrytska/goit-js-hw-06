@@ -17,7 +17,7 @@ const {
 		? alert('Пожалуйста, заполните ВСЕ поля')
 		: console.log({ email: password });
 
-	loginFormRef.reset();
+	form.reset();
 };
 
 form.addEventListener('submit', onFormSubmit);
