@@ -55,7 +55,7 @@ function onCreateBtn(){
 // ---------- Создаем  <div> c amount-------------
 
 function createBoxes(amount) {
-  const markup = new Array(amount)
+  const markup = new Array(amount);
 
   for (let i = 0; i < markup.length; i++){
     markup[i] = `<div style = "background-color:
