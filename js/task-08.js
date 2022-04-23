@@ -1,6 +1,6 @@
 const form = document.querySelector('.login-form');
-const emailInput = form.firstElementChild;
-const passwordInput = emailInput.nextElementSibling;
+const email = form.elements.email.value;
+const password = form.elements.password.value;
 
 
 
