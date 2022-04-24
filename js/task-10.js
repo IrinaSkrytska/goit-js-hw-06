@@ -57,7 +57,7 @@ function onCreateBtn(){
 function createBoxes(amount) {
   const markup = new Array(amount);
 
-  for (let i = 0; i < markup.length; i++){
+  for (let i = 0; i < markup.length; i+=1){
     markup[i] = `<div style = "background-color:
     ${getRandomHexColor()};
     width: ${ 30 + i * 10 }px;
